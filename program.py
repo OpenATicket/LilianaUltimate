@@ -12,12 +12,13 @@ while True:
     
     if life <= 0 or turns > 47:
         if life <= 0:
-            print "You win! Your opponent will be at {:,}. It will take {:,} turns and you'll have {:,} zombies.".format(life - 4, turns + 1, x)
+            print "You win! Your opponent will be at {:,} life. It will take {:,} turns and you'll have {:,} zombies.".format(life - 4, turns + 1, x)
             break
         elif turns > 47:
-            print "You ran out of time! Your opponent will be at {:,} and you'll have {:,} zombies.".format(life - 4, x)
+            print "You ran out of time! Your opponent will be at {:,} life and you'll have {:,} zombies.".format(life - 4, x)
             break
         else:
-            continue
+            print 'ya goofed'
+            break
     else: 
         continue
