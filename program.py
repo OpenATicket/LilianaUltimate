@@ -1,7 +1,12 @@
 x = 0
 turns = 0
 rawlife = raw_input('How much life did he have?(Even #\'s only!) ')
-life = int(rawlife)
+try:
+    life = int(rawlife)
+except:
+    print "That's not an integer... is it?"
+    quit()
+
 
 while True:
     x = x + (2+x)
